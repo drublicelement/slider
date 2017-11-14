@@ -1,0 +1,439 @@
+//---------------------------------------
+// COLORES WEB
+//---------------------------------------
+
+
+//
+$fondo:#111111;
+$texto:#111111;
+$hover:#EDDA84;
+$texto2:#ffffff;
+$general:#EDDA84;
+$secundario:#DBB21D;
+$servicios:#1F1F1F;
+$nav:#E9BC00;
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.paginacion li{
+    width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+   // background-color: #000000;
+}
+.fondo{
+     width: 4rem;
+    height: 4rem;
+    line-height: 4rem;
+    border-radius: 50%;
+    background-color: #000000;
+}
+
+.active{
+   
+    background-color: #F7BC03;
+}
+
+.container-fluid {
+  padding-right: 0;
+  padding-left: 0;
+
+}
+
+html{
+    font-size: 15px;
+}
+
+body{
+    
+    font-family: 'Open Sans', sans-serif;
+    color: $texto;
+}
+
+.bienvenidos{
+    
+    
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.bienvenidos .slideshow{
+  position: relative;
+    width: 100%;
+    
+}
+.bienvenidos ul,ol{
+    list-style: none;
+   
+}
+.slideshow .slider li img{
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+}
+
+.paginacion{
+    
+    position: absolute;
+    top: 26%;
+    //left: 10.3rem;
+     left: 6%;
+    display: flex;
+    
+    
+}
+.paginacion .li1 img,.paginacion .li2 img,
+.paginacion .li3 img,.paginacion .li4 img,
+.paginacion .li5 img,.paginacion .li6 img{
+    
+    width: 3rem;
+    height: auto;
+    margin-left: 1.17rem;
+    
+}
+
+
+
+.slideshow .paginacion li{
+    font-size: 20px;
+    margin: 2px 5px;
+    cursor: pointer;
+    z-index: 9999;
+    position:relative;
+}
+
+.left,.right{
+    position: absolute;
+    top: 0;
+    color:#000000;
+    font-size: 35px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.left{
+    left: 10px;
+}
+.right{
+    right:  10px;
+}
+
+.encabezado{
+    background:transparent;
+    padding: 1rem;
+    
+}
+.encabezado .container{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+   
+    align-items: center;
+    
+}
+
+.encabezado .container .menu-borde{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: space-between;
+     border: 1px solid $nav;
+    align-items: center;
+    border-radius: 20px;   
+}
+
+.encabezado .logonav{
+    
+
+}
+
+.encabezado .logonav img{
+    
+    width: 160px;
+    height: auto;
+    padding-top: 0.5rem;
+    
+}
+
+.boton-menu{
+    border: 0;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0.8rem;
+    background: transparent;
+    color: $texto2;
+    
+    
+}
+.boton-menu:focus{
+   outline: 0;
+}
+
+.boton-buscar{
+    margin-left: auto;
+    margin-right: 0.5rem;
+}
+
+/* estilos bloque buscar */
+
+#bloque-buscar{
+    
+    flex: 1 1 100%;
+}
+
+.contenedor-bloque-buscar{
+    
+    display: flex;
+    height: 3rem;
+    margin:1rem 0;
+}
+.contenedor-bloque-buscar input[type="text"]{
+    border:0;
+    border-radius: 5px 0 0 5px;
+    padding: 1rem;
+}
+.contenedor-bloque-buscar input[type="submit"]{
+    flex:1 1 auto;
+    border:0;
+    border-radius: 0 5px 5px 0;
+    color:$texto2;
+    background:$general;
+}
+#menu-principal{
+    display: none;
+  
+}
+#menu-principal ul{
+    
+     display: flex;
+    
+    
+}
+#menu-principal ul a{
+   
+    margin-right: 10px;
+}
+#menu-principal ul a:hover,
+#menu-principal ul li.active a{
+  color: $hover;
+    
+}
+
+
+.btn-primary{
+    
+    margin-top: 2rem;
+    background-color: $general;
+    border-color: transparent;
+    transition: all .5s ease;
+    
+}
+
+.btn-primary:hover{
+    
+    
+    background-color: $secundario;
+    border-color: transparent;
+}
+
+.flecha-bajar a{
+    
+    color: #ffffff;
+    font-size: 4rem;
+    display: inline-block;
+    animation: flecha-animada 2s ease-in-out infinite;
+}
+
+
+@keyframes flecha-animada{
+    
+    from{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(6px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.agencia{
+    
+    background:$secundario;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;  
+}
+
+.agencia .display-4{
+    padding-top: 6rem;
+}
+
+.prueba{
+    background: $general;
+}
+.prueba2{
+    background: green;
+}
+
+//---------------------------------------
+// Tu mejor eleccion
+//---------------------------------------
+
+
+.tu-mejor-eleccion ul li{
+    
+    list-style: none;
+    min-height: 8rem;//alto minimo en caso el texto sea mas grande que el de otro todo se vea igual.
+}
+.tu-mejor-eleccion ul li .fa{
+    
+    font-size: 2.3rem;
+    background: $general;
+    border-radius: 50%;
+    width: 4.5rem;
+    height: 4.5rem;
+    line-height: 4.5rem;
+}
+
+
+
+//---------------------------------------
+// servicios Main
+//---------------------------------------
+
+.servicios{
+    background:$servicios;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: $texto2;
+    
+}
+
+.servicios img{
+    flex: 0 0 60px;
+    margin-right: 1rem;
+    overflow: hidden;
+    
+}
+.servicios h3{
+    
+    display: flex;
+   flex: 1 1 auto;
+    font-size: 1.5rem;
+    justify-content: space-between;
+    border: solid 1px red;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.servicios h3::after{
+   content: " \f054";
+    font-family: FontAwesome;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+    opacity: 0.5;
+    position: relative;
+    left: 0px;
+    transition:all  1s ease;
+    
+    
+}
+.servicios h3:hover::after{
+  left: -10px;
+    cursor: pointer;
+        
+}
+
+.servicios article{
+    
+    display: flex;
+    align-items: center;
+    min-width: 15rem;
+    
+    
+    
+}
+
+//===========================================
+
+
+ input {
+            padding: 3px 6px;
+            cursor: pointer;
+            color: white;
+            background: black;
+            border: 1px dotted black
+        }
+        input:hover{color:black; background:white}
+        .area {
+            padding: 20px 0;
+            min-height: 180px;
+            border-top: 1px dotted black;
+        }
+        .outer {
+            position: absolute;
+            right: 0;
+            overflow: hidden;
+            height: 300px;
+            width: 300px;
+            margin: 20px;
+            -webkit-transition: all .4s
+        }
+        .outer .box {
+            padding: 10px;
+            height: 100px;
+            width: 100px;
+            line-height: 100px;
+            color: white;
+            text-align: center;
+            background: black
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
